@@ -74,6 +74,7 @@ h2:before {
 em {
 	font-weight: 200;
 	font-size: 1.3rem;
+	color: hsl(0, 0%, 30%);
 }
 
 h3,
@@ -192,4 +193,33 @@ li::before {
 
 li + li {
 	margin-top: 0.8rem;
+}
+
+@media (max-width: 1182px) {
+	.container {
+		margin: 0 auto;
+		width: 80%;
+		max-width: 750px;
+	}
+
+	.row {
+		flex-direction: column;
+	}
+
+	.column-right {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		padding-top: 0;
+		padding-bottom: 4rem;
+	}
+
+	.column-left {
+		width: 100%;
+	}
+
+	.profile-pic-container {
+		display: grid;
+		place-content: center;
+	}
 }
